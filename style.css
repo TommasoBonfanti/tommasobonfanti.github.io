@@ -146,23 +146,50 @@ a:focus-visible {
   object-position: 52% center;
 }
 
-.timeline + .timeline { margin-top: 2.5rem; }
+.timeline + .timeline { margin-top: 3rem; }
+.timeline h2 {
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--hairline);
+  margin-bottom: 1.25rem;
+}
 
 .timeline ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.timeline li {
-  padding: 0.85rem 0;
-  border-top: 1px solid var(--hairline);
-}
-.timeline li:last-child { border-bottom: 1px solid var(--hairline); }
+.timeline li + li { margin-top: 1.5rem; }
 
-.date {
-  display: block;
-  font-size: 13px;
+/* Three levels: title, detail, muted place · dates */
+.timeline h3 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+.timeline p {
+  margin: 0.15rem 0 0;
+  line-height: 1.45;
+}
+.timeline .meta {
+  font-size: 14px;
   color: var(--muted);
+}
+
+/* CV button under the photo */
+.button {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--ink);
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.15s, border-color 0.15s;
+}
+.button:hover {
+  color: var(--muted);
+  border-color: var(--muted);
 }
 
 /* Wide screens: timeline left, photo right */

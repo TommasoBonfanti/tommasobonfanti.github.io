@@ -39,49 +39,56 @@
   <main>
     <!-- Bio -->
     <section class="bio" id="bio" aria-label="About">
-      <!-- TODO: this bio is a draft. Rewrite it in your own words. -->
-      <p>Quantum engineering student at ETH Zurich, trained as a mathematical engineer at Politecnico di Milano. I work on the optics, electronics and simulations behind quantum experiments.</p>
+      <p>Quantum Engineering at ETH Zurich. Previously Mathematical Engineering at Politecnico di Milano.</p>
     </section>
 
     <!-- Timeline + photo -->
     <div class="about">
-      <figure class="photo">
+      <div class="photo">
         <img src="assets/photo.jpg" alt="Tommaso Bonfanti wearing a laurel wreath and a navy suit at his graduation from Politecnico di Milano" width="1920" height="1280">
-      </figure>
+        <a class="button" href="assets/cv.pdf">CV (PDF)</a>
+      </div>
 
       <div>
-        <section class="timeline" aria-labelledby="experience">
-          <h2 id="experience">Experience</h2>
-          <ol>
-            <li>
-              <span class="date">Sept 2026 – Jan 2027</span>
-              QuanTech project, ETH Zurich &amp; PSI: tunable microlens arrays for fast readout in neutral-atom quantum processors
-            </li>
-            <li>
-              <span class="date">June – Aug 2026</span>
-              Research Assistant, Trapped Ion Quantum Information group (Prof. Jonathan Home), ETH Zurich
-            </li>
-            <li>
-              <span class="date">Feb – June 2026</span>
-              Research project, Photonics Lab (Prof. Lukas Novotny), ETH Zurich: optical trapping behind a transparent membrane
-            </li>
-            <li>
-              <span class="date">Feb 2026 – present</span>
-              Board member, Quantum Engineering Commission, ETH Zurich
-            </li>
-          </ol>
-        </section>
-
+        <!-- Each entry: title (place or role), detail line, then muted place · dates -->
         <section class="timeline" aria-labelledby="education">
           <h2 id="education">Education</h2>
           <ol>
             <li>
-              <span class="date">2025 – exp. Jan 2028</span>
-              MSc Quantum Engineering, ETH Zurich
+              <h3>ETH Zurich</h3>
+              <p>MSc in Quantum Engineering</p>
+              <p class="meta">Zurich, Switzerland · Sep. 2025 – exp. Jan. 2028</p>
             </li>
             <li>
-              <span class="date">2022 – 2025</span>
-              BSc Mathematical Engineering, Politecnico di Milano, 110/110 cum laude
+              <h3>Politecnico di Milano</h3>
+              <p>BSc in Mathematical Engineering, 110/110 cum laude</p>
+              <p class="meta">Milan, Italy · Sep. 2022 – Jul. 2025</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline" aria-labelledby="experience">
+          <h2 id="experience">Experience</h2>
+          <ol>
+            <li>
+              <h3>QuanTech project, ETH Zurich &amp; PSI</h3>
+              <p>Tunable microlens arrays for fast readout in neutral-atom quantum processors</p>
+              <p class="meta">Sep. 2026 – Jan. 2027</p>
+            </li>
+            <li>
+              <h3>Research Assistant, ETH Zurich</h3>
+              <p>Trapped Ion Quantum Information group (Prof. Jonathan Home)</p>
+              <p class="meta">Jun. 2026 – Aug. 2026</p>
+            </li>
+            <li>
+              <h3>Research project, ETH Zurich</h3>
+              <p>Photonics Lab (Prof. Lukas Novotny): optical trapping behind a transparent membrane</p>
+              <p class="meta">Feb. 2026 – Jun. 2026</p>
+            </li>
+            <li>
+              <h3>Board member, ETH Zurich</h3>
+              <p>Quantum Engineering Commission</p>
+              <p class="meta">Feb. 2026 – Present</p>
             </li>
           </ol>
         </section>
@@ -94,7 +101,6 @@
     <ul class="links">
       <li><a href="https://linkedin.com/in/tommaso-bonfanti-7701b7268" target="_blank" rel="noopener">LinkedIn</a></li>
       <li><a href="mailto:tbonfanti@ethz.ch">Email</a></li>
-      <li><a href="assets/cv.pdf">CV (PDF)</a></li>
     </ul>
     <p class="copy">© 2026 Tommaso Bonfanti</p>
   </footer>
