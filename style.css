@@ -54,6 +54,30 @@ a:focus-visible {
 
 .muted { color: var(--muted); }
 
+/* ===== Tabs (top of every page) ===== */
+.tabs {
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  gap: 1.75rem;
+  font-size: 14px;
+}
+.tabs a {
+  color: var(--muted);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+}
+.tabs a:hover { color: var(--ink); }
+.tabs a[aria-current="page"] {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
+
 /* ===== Card screen (home) ===== */
 .card {
   position: relative;
@@ -204,7 +228,7 @@ a:focus-visible {
 
 /* ===== Projects page ===== */
 .page-header {
-  padding: 4rem 1rem 0;
+  padding: 5rem 1rem 0;
   text-align: center;
 }
 .page-header .name {
@@ -231,17 +255,29 @@ a:focus-visible {
   padding: 0;
   list-style: none;
 }
-.project {
-  padding: 1rem 0;
-  border-top: 1px solid var(--hairline);
+.projects h1 {
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--hairline);
+  margin-bottom: 1.25rem;
 }
+.project + .project { margin-top: 1.5rem; }
+/* Same three levels as the home timeline */
 .project h2 {
   margin: 0;
-  font-size: 16px;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.35;
   letter-spacing: 0;
   text-transform: none;
 }
-.project p { margin: 0; }
+.project p {
+  margin: 0.15rem 0 0;
+  line-height: 1.45;
+}
+.project .meta {
+  font-size: 14px;
+  color: var(--muted);
+}
 
 /* ===== Footer ===== */
 .site-footer {
