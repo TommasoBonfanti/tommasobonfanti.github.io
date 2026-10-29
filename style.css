@@ -326,7 +326,19 @@ a:focus-visible {
   font-size: 14px;
   color: var(--muted);
 }
-.project-figure { margin: 2rem 0 2.5rem; }
+.project-figure { margin: 2rem 0 0; }
+
+/* Authors / Supervisors under the picture */
+.credits {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.2rem 1rem;
+  margin: 0.9rem 0 0;
+  font-size: 14px;
+}
+.credits dt { color: var(--muted); }
+.credits dd { margin: 0; }
+.project-page h2 { margin-top: 2.5rem; }
 .project-figure img {
   width: 100%;
   height: auto;
