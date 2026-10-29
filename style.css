@@ -414,6 +414,11 @@ a:focus-visible {
   margin-bottom: 1.25rem;
 }
 .project-page p { margin: 0 0 1rem; }
+.project-page h3 {
+  margin: 1.75rem 0 0.35rem;
+  font-size: 16px;
+  font-weight: 500;
+}
 .request {
   margin-top: 2.5rem !important;
   padding-top: 1.25rem;
