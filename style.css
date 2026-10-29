@@ -328,6 +328,59 @@ a:focus-visible {
 }
 .project-figure { margin: 2rem 0 0; }
 
+/* Picture slider (controls are added by assets/slider.js) */
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.slides::-webkit-scrollbar { display: none; }
+.slide {
+  flex: 0 0 100%;
+  margin: 0;
+  scroll-snap-align: start;
+}
+.slide img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: contain; /* shows whole figures, no cropping */
+}
+.slide figcaption {
+  margin-top: 0.5rem;
+  font-size: 13px;
+  color: var(--muted);
+}
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+}
+.slider-nav button {
+  padding: 0.2rem 0.4rem;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 15px;
+  color: var(--muted);
+  cursor: pointer;
+}
+.slider-nav button:hover { color: var(--ink); }
+.slider-nav button:focus-visible { outline: 1px solid var(--ink); }
+.slider-nav .dot {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: 1px solid var(--muted);
+  border-radius: 50%;
+}
+.slider-nav .dot[aria-current="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
 /* Authors / Supervisors under the picture */
 .credits {
   display: grid;

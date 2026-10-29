@@ -39,25 +39,38 @@
     <h1>Optical trapping behind a transparent membrane</h1>
     <p class="meta">Research project, Photonics Lab, ETH Zurich · Feb. 2026 – Jun. 2026</p>
 
-    <!-- TODO: add a picture as assets/projects/membrane.jpg, then replace this
-         placeholder div with:
-         <img src="assets/projects/membrane.jpg" alt="Describe what the picture shows"> -->
-    <figure class="project-figure">
-      <div class="placeholder">Picture coming soon</div>
-    </figure>
+    <!-- Picture slider. One <figure class="slide"> per picture; the caption is optional.
+         TODO: put the pictures in assets/projects/membrane/ and replace each placeholder div with:
+         <img src="assets/projects/membrane/1.jpg" alt="Describe what the picture shows"> -->
+    <div class="slider project-figure" aria-roledescription="carousel" aria-label="Project pictures">
+      <div class="slides">
+        <figure class="slide">
+          <div class="placeholder">Picture 1</div>
+          <figcaption>Caption for picture 1</figcaption>
+        </figure>
+        <figure class="slide">
+          <div class="placeholder">Picture 2</div>
+          <figcaption>Caption for picture 2</figcaption>
+        </figure>
+        <figure class="slide">
+          <div class="placeholder">Picture 3</div>
+          <figcaption>Caption for picture 3</figcaption>
+        </figure>
+      </div>
+    </div>
 
     <!-- Credits: add more names separated by commas -->
     <dl class="credits">
       <dt>Authors</dt>
-      <dd>Tommaso Bonfanti</dd>
-      <dt>Supervisors</dt>
-      <dd>Prof. Lukas Novotny</dd>
+      <dd>Tommaso Bonfanti, Jonas Ochsenbein</dd>
+      <dt>Supervision</dt>
+      <dd>Dr. Louisiane Devaud, Prof. Dr. Lukas Novotny</dd>
     </dl>
 
-    <h2>Summary</h2>
-    <!-- TODO: replace with the project abstract -->
-    <p>Simulated the vectorial focal field through a stratified medium to predict how an inserted glass slab broadens the focus and weakens the trap, and measured trap frequencies to test the model.</p>
-    <p>Designed a UHV-compatible assembly in SolidWorks to hold a graphene membrane between the focusing lens and the trapped particle, and built the experiment from an empty optical table: assembled and pumped down a new vacuum chamber, aligned the trapping path and forward QPD detection.</p>
+    <h2>Abstract</h2>
+    <p>Optically levitated nanoparticles in high vacuum are a versatile platform for testing quantum mechanics at large mass scales. One promising route towards macroscopic quantum superpositions is to let the particle’s wavefunction evolve in a non-harmonic potential created by static fields from nearby electrodes, which must sit close to the trap without blocking the trapping beam. Graphene, a single atomic layer that is electrically conductive but nearly transparent, is an attractive candidate for this role.</p>
+    <p>This thesis takes a first proof-of-concept step in that direction. We design and build a trapping assembly that positions a glass substrate carrying a graphene membrane on the incoming side of the focus, and demonstrate stable trapping of silica nanoparticles behind both bare and graphene-coated glass. We characterize the resulting focus distortion through the power-normalized centre-of-mass frequencies of the trapped particle and compare it with vectorial simulations of the focal field in a stratified medium. Inserting a substrate weakens the trap most strongly along the optical axis, and the graphene coating adds a further reduction beyond the bare glass. Applying an oscillating voltage to the contacted sample drives the trapped particle, but a control measurement shows that the graphene contribution cannot yet be isolated. In addition, we check whether nanoparticles accumulate on the graphene during trap loading, and find no detectable deposition in microscopy of sprayed samples.</p>
+    <p>Together, these results are a first step towards using graphene as a transparent electrode in levitated optomechanics.</p>
 
     <p class="request">The full report is available upon reasonable request. <a href="mailto:tbonfanti@ethz.ch?subject=Report%20request%3A%20Optical%20trapping%20behind%20a%20transparent%20membrane">Contact me</a>.</p>
   </main>
@@ -73,5 +86,6 @@
     <p class="copy">© 2026 Tommaso Bonfanti</p>
   </footer>
 
+  <script src="assets/slider.js"></script>
 </body>
 </html>
