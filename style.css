@@ -354,6 +354,7 @@ a:focus-visible {
   font-size: 13px;
   color: var(--muted);
 }
+.slide figcaption a { color: var(--muted); }
 .slider-nav {
   display: flex;
   justify-content: center;
