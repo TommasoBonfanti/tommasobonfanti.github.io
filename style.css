@@ -343,8 +343,11 @@ a:focus-visible {
 }
 .slide img {
   width: 100%;
-  aspect-ratio: 3 / 2;
+  height: auto;
+  aspect-ratio: 4 / 3;
   object-fit: contain; /* shows whole figures, no cropping */
+  background: #fff;    /* matches the white background of renders and plots */
+  border: 1px solid var(--hairline);
 }
 .slide figcaption {
   margin-top: 0.5rem;
