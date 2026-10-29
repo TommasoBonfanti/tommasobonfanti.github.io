@@ -69,10 +69,12 @@
     <p>I extended a QuTiP-based spin-squeezing simulation module to support time-dependent Hamiltonians and inhomogeneous couplings, with Monte Carlo sampling of Brownian phase noise.</p>
 
     <h3>Control software</h3>
-    <p>I rebuilt the team’s experiment codebase in Python. Pulse sequences are now written as JSON and interpreted at runtime on a custom AMD Zynq UltraScale+ RFSoC, replacing compiled C++ firmware loads, so a sequence can be changed without rebuilding the firmware.</p>
+    <p>The setup is moving to a new control system, in which experiments are written in Python with the group’s PyCrystal library and run on an RFSoC-based controller. I built the new Experiment Library for the setup from the ground up, porting, reorganising and extending the experiments from the legacy C++ code: from the hardware description and a common cool–manipulate–detect frame to carrier, sideband and sideband-cooling sequences. I also helped install the new hardware, mount it in a new rack and plan the cabling.</p>
 
     <h3>Electronics</h3>
     <p>I designed in KiCad, assembled and bench-tested a 4-layer PCB that converts the EMCCD camera’s LVDS readout signal to 3.3 V TTL at 40 MHz.</p>
+
+    <p class="request">The full report is available upon reasonable request. <a href="mailto:tbonfanti@ethz.ch?subject=Report%20request%3A%20Trapped-ion%20research%20assistantship">Contact me</a>.</p>
   </main>
 
   <!-- Footer -->
