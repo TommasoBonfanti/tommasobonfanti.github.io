@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trapped-ion experiment · Tommaso Bonfanti</title>
+  <meta name="description" content="Research assistantship in the Trapped Ion Quantum Information group, ETH Zurich: control software, readout electronics and simulations.">
+
+  <!-- Link previews (LinkedIn, WhatsApp) -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Control software and readout electronics for a trapped-ion experiment">
+  <meta property="og:description" content="Research assistantship in the Trapped Ion Quantum Information group, ETH Zurich.">
+  <meta property="og:url" content="https://tommasobonfanti.github.io/project-trapped-ion.html">
+  <meta property="og:image" content="https://tommasobonfanti.github.io/assets/projects/trapped-ion/pcb.jpg">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Tabs -->
+  <nav class="tabs" aria-label="Pages">
+    <a href="index.html">Home</a>
+    <a href="projects.html" aria-current="page">Projects</a>
+  </nav>
+
+  <!-- Header: name links back home -->
+  <header class="page-header">
+    <a href="index.html"><span class="name">Tommaso Bonfanti</span></a>
+    <hr class="rule">
+  </header>
+
+  <main class="project-page">
+    <p class="back"><a href="projects.html">← All projects</a></p>
+
+    <h1>Control software and readout electronics for a trapped-ion experiment</h1>
+    <p class="meta">Research Assistant, Trapped Ion Quantum Information group, ETH Zurich · Jun. 2026 – Sep. 2026</p>
+
+    <!-- Picture slider. One <figure class="slide"> per picture (files in assets/projects/trapped-ion/);
+         the caption is optional. -->
+    <div class="slider project-figure" aria-roledescription="carousel" aria-label="Project pictures">
+      <div class="slides">
+        <figure class="slide">
+          <img src="assets/projects/trapped-ion/ion.png" alt="Camera image: a single bright spot, the trapped ion, in the middle of a dark, noisy background" width="726" height="544">
+          <figcaption>A single ion, trapped during my time in the lab.</figcaption>
+        </figure>
+        <figure class="slide">
+          <img src="assets/projects/trapped-ion/pcb.jpg" alt="Small black circuit board with three gold SMA connectors and a power plug, labelled LVDS to 3.3 V TTL Converter v1.1" width="780" height="585">
+          <figcaption>The LVDS to 3.3 V TTL converter board I designed and assembled.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- Credits: add more names separated by commas -->
+    <dl class="credits">
+      <dt>Author</dt>
+      <dd>Tommaso Bonfanti</dd>
+      <dt>Supervision</dt>
+      <dd>Gabriele Giuli, Prof. Dr. Jonathan Home</dd>
+    </dl>
+
+    <h2>Summary</h2>
+    <p>Three-month research assistantship in the Trapped Ion Quantum Information group, working on the experimental setup.</p>
+    <p>I rebuilt the team’s experiment codebase in Python. Pulse sequences are now written as JSON and interpreted at runtime on a custom AMD Zynq UltraScale+ RFSoC, instead of being compiled into new C++ firmware for every change.</p>
+    <p>I designed in KiCad, assembled and bench-tested a 4-layer PCB that converts the EMCCD camera’s LVDS readout signal to 3.3 V TTL at 40 MHz.</p>
+    <p>I also wrote simulations of the spin-squeezing protocol the group plans to use.</p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <ul class="links">
+      <li><a href="https://linkedin.com/in/tommaso-bonfanti-7701b7268" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/tommasobonfanti" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="mailto:tbonfanti@ethz.ch">Email</a></li>
+      <li><a href="assets/cv.pdf">CV (PDF)</a></li>
+    </ul>
+    <p class="copy">© 2026 Tommaso Bonfanti</p>
+  </footer>
+
+  <script src="assets/slider.js"></script>
+</body>
+</html>
